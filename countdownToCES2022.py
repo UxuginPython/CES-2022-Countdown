@@ -9,7 +9,6 @@ window.title('Countdown to CES')
 label=Label(window, text='Loading...', font=('Arial', 72, ''))
 label.pack()
 import datetime
-now=datetime.datetime.now
 CESTime=datetime.datetime(2022, 1, 4, 8, 0, 0, 0) #Year, Month, Day, Hour, Minute, Second, Millisecond
 while True:
     label.config(text=CESTime-datetime.datetime.now())
